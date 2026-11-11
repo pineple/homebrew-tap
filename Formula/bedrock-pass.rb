@@ -1,17 +1,17 @@
 class BedrockPass < Formula
   desc "Transfer Minecraft Bedrock LAN connections to a remote Geyser server"
   homepage "https://github.com/pineple/bedrock-pass-releases"
-  version "0.1.0"
+  version "0.1.2"
   depends_on :macos
 
   on_arm do
-    url "https://github.com/pineple/bedrock-pass-releases/releases/download/v0.1.0/bedrock-pass_0.1.0_darwin_arm64.tar.gz"
-    sha256 "2049f21fdfbba1044f53c60a53e7a7bd7d2e2ac16c41439253ce8b6047ba5ae1"
+    url "https://github.com/pineple/bedrock-pass-releases/releases/download/v0.1.2/bedrock-pass_0.1.2_darwin_arm64.tar.gz"
+    sha256 "6382db0bba5296f74bf2f0f091e1f5d22c254596899c58ae69b40edf1b54d17a"
   end
 
   on_intel do
-    url "https://github.com/pineple/bedrock-pass-releases/releases/download/v0.1.0/bedrock-pass_0.1.0_darwin_amd64.tar.gz"
-    sha256 "40dbb143a7d48c5a3a3f1430152357e6e109c2a29817ba374020059f2a6bf1e0"
+    url "https://github.com/pineple/bedrock-pass-releases/releases/download/v0.1.2/bedrock-pass_0.1.2_darwin_amd64.tar.gz"
+    sha256 "d8a168ee327b21f9e6c2c8d862ca447b364b48e8cb2378420884664bf2f16abe"
   end
 
   def install

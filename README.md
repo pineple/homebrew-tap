@@ -22,6 +22,6 @@ The formula installs native Apple Silicon and Intel builds. Third-party notices 
 
 ## Publishing a release
 
-From the private `bedrock-pass` source repository, authenticate the GitHub CLI and run `./scripts/publish-cli-release.sh 0.1.0`. This builds the Apple Silicon and Intel archives, generates `SHA256SUMS`, and uploads those files to the public `pineple/bedrock-pass-releases` repository.
+From the private `bedrock-pass` source repository, authenticate the GitHub CLI and run `./scripts/publish-cli-release.sh 0.1.2`. This builds macOS and Linux archives for ARM64 and AMD64, generates `SHA256SUMS`, and uploads the files to the public `pineple/bedrock-pass-releases` repository.
 
-After publishing, update `Formula/bedrock-pass.rb` with the new version, release URLs, and matching checksums, then push the tap update.
+The publisher updates `Formula/bedrock-pass.rb` in the local tap checkout after uploading the release. Review the change, then commit and push it so `brew update` can pick it up.
